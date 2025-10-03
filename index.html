@@ -1,34 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <nav>
-        <p>68070260</p>
-        <h2>ITF Website</h2>
-        <p>Week 14</p>
+      <p>68070260</p>
+      <h2>ITF Website</h2>
+      <p>Week 14</p>
     </nav>
     <div class="con">
-        <h2 id="mytitle">
-                Welcome to my ITF Website!
-            </h2>
-            <img src="ITFLab_res14/Study.png" alt="Study" width="128">
-            <hr>
+      <img class="lhon" src="ITFLab_res14/Laugh.png" alt="Study" width="128" />
+      <div>
+        <h1 id="mytitle">ITF Simple Bank</h1>
+        <h3 id="2rdtitle">Welcome to my first HTML + CSS + JS website!</h3>
+      </div>
     </div>
     <div class="container">
-        <div>
-            
+      <div>
+        <hr />
+        <div class="box">
+          <textarea name="box1" id="outputbox"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="head2">
+      <div class="account">
+        <h2>Account Overview</h2>
+        <div class="Ainformation">
+          <div>
+            <img src="ITFLab_res14/user.png" alt="acc" />
+          </div>
+          <div>
+            <h3>Account Information</h3>
+            <p>Name: Danupon Jewpongsawat</p>
+            <p>Type: Savings Account</p>
+          </div>
+        </div>
+        <div class="Binformation">
+          <div>
+            <img src="ITFLab_res14/briefcase.png" alt="Balance" />
+          </div>
+          <div>
+            <h3>Balance Information</h3>
+            <p>Current account</p>
+            <input type="number" ></input>
+            <p>balance:</p>
+            <p>Current cash</p>
+            <input type="number" ></input>
+            <p>balance:</p>
+            <button onclick="Change()">Change</button>
+          </div>
+        </div>
+        <div class="Ainformation">
+          <div>
+            <img src="ITFLab_res14/toolbox.png" alt="Bank" />
+          </div>
+          <div>
+            <h3>Bank Operation</h3>
+            <p></p>
+            <form action="/action_page.php">
+              <select name="cars" id="cars">
+                <option value="Deposit">Deposit</option>
+                <option value="Withdraw">Withdraw</option>
+              </select>
+              <input type="number" ></input>
+              <br /><br />
+              <button onclick ="Process()">Process</button> 
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="financial">
+        <h2>Financial Tools</h2>
+        <div class="Currency">
+            <div class="Currency01">
+                <img src="ITFLab_res14/coins.png" alt="Money">
+            </div>
             <div>
-                Enter number: <input type="number" id="myinput" value="0">
-                <button onclick="add()">+1</button>
-                <button onclick="remove()">-1</button>
+            <h3>Currency Conveter</h3>
+            <div class="flex">
+                <p>input balance:</p>
+                <input type="number" ></input>
+                
+            </div>
+            <div class="flex">
+                <p>output balance:</p>
+                <input type="number" ></input>
+            </div>
+            <p>input currency</p> 
+            <form action="/action_page.php">
+              <select name="cars" id="cars">
+                <option value="USD">USD</option>
+                <option value="THB">THB</option>
+              </select>
+              <br /><br />
+              <button onclick ="Convert()">Convert</button> 
+            </form>
+           </div>
             </div>
         </div>
     </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
