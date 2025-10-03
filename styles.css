@@ -1,0 +1,19 @@
+nav {background-color: rgb(206, 217, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    margin: 0%;
+    
+}
+ 
+.container{
+    display: grid;
+    grid-template-columns:auto;
+}
+
+#mytitle {
+    color: blue;
+}
