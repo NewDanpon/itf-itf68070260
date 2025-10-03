@@ -2,18 +2,23 @@ nav {background-color: rgb(206, 217, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 16px;
 }
 
 body{
     margin: 0%;
     
 }
- 
+.con{
+    margin: 8px 32px;
+}
 .container{
+    margin: 8px 32px;
     display: grid;
-    grid-template-columns:auto;
+    grid-template-columns: auto;
 }
 
 #mytitle {
     color: blue;
+    size: 11svb;
 }
